@@ -18,51 +18,51 @@ typedef void (^APIRequestFailureBlock)(AFHTTPRequestOperation *operation, id JSO
 
 #pragma mark forces related
 
--(void)requestForces:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)requestForces:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 #pragma mark crime related
 
--(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location date:(NSDate*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location date:(NSDate*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location year:(NSString*)year completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location year:(NSString*)year completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)crimeSearchByLocation:(CLLocationCoordinate2D)location date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)crimeSearchByLocation:(CLLocationCoordinate2D)location date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)crimeCategoriesByDate:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)crimeCategoriesByDate:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)crimeLastUpdated:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)crimeLastUpdated:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)crimeOutcomes:(NSString*)CrimeID completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)crimeOutcomes:(NSString*)CrimeID completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 #pragma mark neighbourhoods related
 
--(void)neighbourhoodsByForce:(NSString*)force completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)neighbourhoodsByForce:(NSString*)force completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)specificNeighbourhoodByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)specificNeighbourhoodByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)specificNeighbourhoodBoundryByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)specificNeighbourhoodBoundryByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)specificNeighbourhoodTeamByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)specificNeighbourhoodTeamByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)specificNeighbourhoodEventsByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)specificNeighbourhoodEventsByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)locationNeighbourhoodByLocation:(CLLocationCoordinate2D)location completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)locationNeighbourhoodByLocation:(CLLocationCoordinate2D)location completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 #pragma mark stop and search related
 
--(void)stopAndSearchByLocation:(CLLocationCoordinate2D)location date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)stopAndSearchByLocation:(CLLocationCoordinate2D)location date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)stopAndSearchByLocationID:(NSString*)locationID date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)stopAndSearchByLocationID:(NSString*)locationID date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)stopAndSearchByNoLocationUsingForce:(NSString*)force date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)stopAndSearchByNoLocationUsingForce:(NSString*)force date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)stopAndSearchByForce:(NSString*)force date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)stopAndSearchByForce:(NSString*)force date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 #pragma mark /pagination
 
--(void)nextPagination:(NSURL*)paginationURL completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander;
+-(void)nextPagination:(NSURL*)paginationURL completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 @end
 
