@@ -2,7 +2,7 @@
 //  UKPoliceDataAPI-SDK.h
 //  UKPoliceDataAPI-SDK
 //
-//  Created by Adam Roberts on 14/10/2014.
+//  Created by Adam Roberts and Josh Santos.
 //  Copyright (c) 2015 Enigmatic Flare Ltd. All rights reserved.
 //  MIT License - http://enigmaticflare.mit-license.org
 
