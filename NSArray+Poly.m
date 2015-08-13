@@ -11,7 +11,7 @@
 @implementation NSArray (Poly)
 
 +(NSString*)polyFromCoordinateArray:(NSArray*)array{
-    return [array componentsJoinedByString:@"+"];
+    return [array componentsJoinedByString:@":"];
 }
 
 -(NSString*)polyFromCoordinateArray{
