@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <UKPoliceDataSDK/UKPoliceDataAPIManager.h>
-#import "AFNetworking.h
+#import "AFNetworking.h"
 
 //! Project version number for UKPoliceDataSDK.
 FOUNDATION_EXPORT double UKPoliceDataSDKVersionNumber;
