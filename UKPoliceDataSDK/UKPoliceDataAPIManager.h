@@ -15,7 +15,6 @@ typedef void (^APIRequestCompletionBlock)(AFHTTPRequestOperation *operation, NSU
 typedef void (^APIRequestFailureBlock)(AFHTTPRequestOperation *operation, id JSON);
 
 +(instancetype)sharedManager;
--(NSString*)buildTestLocations;
 
 #pragma mark forces related
 
@@ -39,7 +38,9 @@ typedef void (^APIRequestFailureBlock)(AFHTTPRequestOperation *operation, id JSO
  
  */
 
--(void)streetLevelCrimeSearchByPoly:(NSArray*)poly completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
+-(void)streetLevelCrimeSearchByPolyArray:(NSArray*)poly completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
+
+-(void)streetLevelCrimeSearchByPoly:(NSString*)poly completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 -(void)streetLevelCrimeSearchByPoly:(NSArray*)poly date:(NSDate*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 

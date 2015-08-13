@@ -12,6 +12,7 @@
 
 +(NSString*)polyFromCoordinateArray:(NSArray*)array;
 -(NSString*)polyFromCoordinateArray;
-
++(NSString*)polyFromCLLocationArray:(NSArray*)array;
+-(NSString*)polyFromCLLocationArray;
 
 @end

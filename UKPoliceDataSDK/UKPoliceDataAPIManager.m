@@ -3,7 +3,7 @@
 //  UKPoliceDataAPI-SDK
 
 #import "UKPoliceDataAPIManager.h"
-#import "NSArray+Poly.h"
+#import "Categories/NSArray+Poly.h"
 
 static NSString * kAPIBaseURI = @"https://data.police.uk/api/";
 static NSString * kAPIEndpointForces = @"forces"; // No params
@@ -67,10 +67,9 @@ static NSString *kHTTPMethodDelete = @"DEL";
 
 #pragma mark crime related
 
--(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
-    
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?lat=%f&lng=%f",kAPIBaseURI,kAPIEndpointStreetLevelCrime,location.latitude,location.longitude]];
-    
+-(void)streetLevelCrimeSearchByPolyArray:(NSArray *)poly completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSString *polyString = [poly polyFromCLLocationArray];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@",kAPIBaseURI,kAPIEndpointStreetLevelCrime,polyString]];
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet  completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
@@ -219,19 +218,5 @@ static NSString *kHTTPMethodDelete = @"DEL";
 
 }
 
--(NSString*)buildTestLocations{
-    
-    NSArray *locations = @[CLLocationCoordinate2DMakeString(53.541471, -2.273573),
-                           CLLocationCoordinate2DMakeString(53.538918, -2.273573),
-                           CLLocationCoordinate2DMakeString(53.538918, -2.276648),
-                           CLLocationCoordinate2DMakeString(53.541471, -2.276648)];
-    
-   return [locations polyFromCoordinateArray];
-
-}
-
-NSString* CLLocationCoordinate2DMakeString(CLLocationDegrees latitude, CLLocationDegrees longitude){
-    return [NSString stringWithFormat:@"%f,%f",latitude,longitude];
-}
 
 @end

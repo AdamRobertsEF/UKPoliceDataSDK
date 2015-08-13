@@ -7,8 +7,18 @@
 //
 
 #import "NSArray+Poly.h"
+#import "NSArray+CLLocation.h"
 
 @implementation NSArray (Poly)
+
+
++(NSString*)polyFromCLLocationArray:(NSArray*)array{
+     return [[array coordinateArrayFromCLLocationArray] polyFromCoordinateArray];
+}
+
+-(NSString *)polyFromCLLocationArray{
+    return [NSArray polyFromCLLocationArray:self];
+}
 
 +(NSString*)polyFromCoordinateArray:(NSArray*)array{
     return [array componentsJoinedByString:@":"];
