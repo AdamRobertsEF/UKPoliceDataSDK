@@ -4,25 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-AFNetworking.xcscheme</key>
+		<key>UKPoliceDataSDK-Sample.xcscheme</key>
 		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>07DE1BCE784C02018EC49D5A</key>
+		<key>F3E872321B7C1D3600D84368</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D61CE229B28C23971B5CDF1B</key>
+		<key>F3E8724B1B7C1D3600D84368</key>
 		<dict>
 			<key>primary</key>
 			<true/>

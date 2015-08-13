@@ -3,11 +3,10 @@
 //  UKPoliceDataAPI-SDK
 
 #import "UKPoliceDataAPIManager.h"
+#import "NSArray+Poly.h"
 
 static NSString * kAPIBaseURI = @"https://data.police.uk/api/";
-
 static NSString * kAPIEndpointForces = @"forces"; // No params
-
 static NSString * kAPIEndpointStreetLevelCrime = @"crimes-street/all-crime";
 static NSString * kAPIEndpointStreetCrimeDates = @"crimes-street-dates"; // No params
 static NSString * kAPIEndpointStreetLevelOutcomes = @"outcomes-at-location";
@@ -86,7 +85,7 @@ static NSString *kHTTPMethodDelete = @"DEL";
     
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
     
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?lat=%f&lng=%f&date=%i-%i",kAPIBaseURI,kAPIEndpointStreetLevelCrime,location.latitude,location.longitude,components.year,components.month]];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?lat=%f&lng=%f&date=%li-%li",kAPIBaseURI,kAPIEndpointStreetLevelCrime,location.latitude,location.longitude,(long)components.year,(long)components.month]];
     
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
@@ -132,8 +131,7 @@ static NSString *kHTTPMethodDelete = @"DEL";
 }
 
 -(void)specificNeighbourhoodBoundryByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@/%@",kAPIBaseURI,force,neighbourhood,boundary]];
-    
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@",kAPIBaseURI,force,neighbourhood]];
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
@@ -216,4 +214,20 @@ static NSString *kHTTPMethodDelete = @"DEL";
     [operation start];
 
 }
+
+-(NSString*)buildTestLocations{
+    
+    NSArray *locations = @[CLLocationCoordinate2DMakeString(53.541471, -2.273573),
+                           CLLocationCoordinate2DMakeString(53.538918, -2.273573),
+                           CLLocationCoordinate2DMakeString(53.538918, -2.276648),
+                           CLLocationCoordinate2DMakeString(53.541471, -2.276648)];
+    
+   return [locations polyFromCoordinateArray];
+
+}
+
+NSString* CLLocationCoordinate2DMakeString(CLLocationDegrees latitude, CLLocationDegrees longitude){
+    return [NSString stringWithFormat:@"%f,%f",latitude,longitude];
+}
+
 @end
