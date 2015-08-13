@@ -15,6 +15,7 @@ typedef void (^APIRequestCompletionBlock)(AFHTTPRequestOperation *operation, NSU
 typedef void (^APIRequestFailureBlock)(AFHTTPRequestOperation *operation, id JSON);
 
 +(instancetype)sharedManager;
+-(NSString*)buildTestLocations;
 
 #pragma mark forces related
 
