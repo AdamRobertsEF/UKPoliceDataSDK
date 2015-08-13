@@ -6,9 +6,7 @@
 #import "NSArray+Poly.h"
 
 static NSString * kAPIBaseURI = @"https://data.police.uk/api/";
-
 static NSString * kAPIEndpointForces = @"forces"; // No params
-
 static NSString * kAPIEndpointStreetLevelCrime = @"crimes-street/all-crime";
 static NSString * kAPIEndpointStreetCrimeDates = @"crimes-street-dates"; // No params
 static NSString * kAPIEndpointStreetLevelOutcomes = @"outcomes-at-location";
@@ -133,7 +131,7 @@ static NSString *kHTTPMethodDelete = @"DEL";
 }
 
 -(void)specificNeighbourhoodBoundryByForce:(NSString*)force neighbourhood:(NSString*)neighbourhood completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander{
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@/%@",kAPIBaseURI,force,neighbourhood]];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@/%@",kAPIBaseURI,force,neighbourhood]];
     
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHander];
 }

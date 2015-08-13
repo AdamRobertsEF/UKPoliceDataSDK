@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		666F7E691B6B1A5E00EAD7AF /* UKPoliceDataAPIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 666F7E661B6B1A5E00EAD7AF /* UKPoliceDataAPIManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		666F7E6B1B6B1A5E00EAD7AF /* UKPoliceDataAPI-SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 666F7E681B6B1A5E00EAD7AF /* UKPoliceDataAPI-SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		666F7E6D1B6B1B3F00EAD7AF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 666F7E6C1B6B1B3F00EAD7AF /* Info.plist */; };
 		D23144FA9B5D6F66D6455F08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31677A25CA9324EE47D6BDC7 /* libPods.a */; };
 		F3E872251B7C10F100D84368 /* UKPoliceDataAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 666F7E671B6B1A5E00EAD7AF /* UKPoliceDataAPIManager.m */; };
 		F3E872281B7C159C00D84368 /* NSArray+Poly.h in Headers */ = {isa = PBXBuildFile; fileRef = F3E872261B7C159C00D84368 /* NSArray+Poly.h */; };
@@ -170,7 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				666F7E6D1B6B1B3F00EAD7AF /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
