@@ -42,6 +42,8 @@ typedef void (^APIRequestFailureBlock)(AFHTTPRequestOperation *operation, id JSO
 
 -(void)streetLevelCrimeSearchByPoly:(NSString*)poly completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
+-(void)streetLevelCrimeSearchByPolyArray:(NSArray*)poly date:(NSDate*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
+
 -(void)streetLevelCrimeSearchByPoly:(NSArray*)poly date:(NSDate*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 -(void)streetLevelCrimeSearchByPoly:(NSArray*)poly year:(NSString*)year completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
