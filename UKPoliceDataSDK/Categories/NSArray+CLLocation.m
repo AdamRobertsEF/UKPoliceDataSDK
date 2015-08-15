@@ -2,7 +2,7 @@
 //  NSArray+CLLocation.m
 //  UKPoliceDataSDK
 //
-//  Created by Joshua Santos on 8/13/15.
+//  Created by Adam Roberts and Joshua Santos on 8/13/15.
 //  Copyright © 2015 Enigmatic Flare Ltd. All rights reserved.
 //
 
