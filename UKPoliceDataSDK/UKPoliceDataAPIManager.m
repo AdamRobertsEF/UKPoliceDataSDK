@@ -70,12 +70,20 @@ static NSString *kHTTPMethodDelete = @"DEL";
 -(void)streetLevelCrimeSearchByPolyArray:(NSArray *)poly completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
     NSString *polyString = [poly polyFromCLLocationArray];
     NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@",kAPIBaseURI,kAPIEndpointStreetLevelCrime,polyString]];
-    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet  completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodPost  completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
 -(void)streetLevelCrimeSearchByPoly:(NSString*)poly completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
     NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@",kAPIBaseURI,kAPIEndpointStreetLevelCrime,poly]];
-    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet  completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodPost  completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+}
+
+-(void)streetLevelCrimeSearchByPolyArray:(NSArray *)poly date:(NSDate *)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:
+                                    NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@&date=%li-%li",kAPIBaseURI,kAPIEndpointStreetLevelCrime,poly, (long)components.year, (long)components.month]];
+    
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodPost completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
 -(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location year:(NSString*)year completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
