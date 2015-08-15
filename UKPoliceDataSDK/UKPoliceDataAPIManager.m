@@ -100,6 +100,8 @@ static NSString *kHTTPMethodDelete = @"DEL";
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
+
+
 -(void)crimeCategoriesByDate:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
    
     NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?date=%@",kAPIBaseURI,kAPIEndpointCrimeCategories,date]];

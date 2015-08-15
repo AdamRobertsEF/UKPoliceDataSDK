@@ -49,7 +49,14 @@ typedef void (^APIRequestFailureBlock)(AFHTTPRequestOperation *operation, id JSO
 
 -(void)crimeSearchByLocation:(CLLocationCoordinate2D)location date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
--(void)crimeSearchByPoly:(NSArray*)poly date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
+/*
+ Crime Search By Poly
+ 
+ */
+
+-(void)crimeSearchByPolyArray:(NSArray*)poly date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
+
+-(void)crimeSearchByPoly:(NSString*)poly date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 -(void)crimeCategoriesByDate:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
