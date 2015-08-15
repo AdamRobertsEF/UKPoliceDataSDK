@@ -100,7 +100,18 @@ static NSString *kHTTPMethodDelete = @"DEL";
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
+-(void)crimeSearchByPoly:(NSString *)poly date:(NSString *)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@&date=%@",kAPIBaseURI,kAPIEndpointCrimeAtLocation,poly,date]];
+    
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+}
 
+-(void)crimeSearchByPolyArray:(NSArray *)poly date:(NSString *)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSString *polyString = [poly polyFromCLLocationArray];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@&date=%@",kAPIBaseURI,kAPIEndpointCrimeAtLocation,polyString,date]];
+    
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+}
 
 -(void)crimeCategoriesByDate:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
    
