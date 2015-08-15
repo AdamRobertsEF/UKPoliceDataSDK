@@ -95,6 +95,19 @@ static NSString *kHTTPMethodDelete = @"DEL";
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodPost completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
+-(void)streetLevelCrimeSearchByPolyArray:(NSArray *)poly year:(NSString *)year completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSString *polyString = [poly polyFromCLLocationArray];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@&date=%@",kAPIBaseURI,kAPIEndpointStreetLevelCrime,polyString, year]];
+    
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodPost completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+}
+
+-(void)streetLevelCrimeSearchByPoly:(NSString *)poly year:(NSString *)year completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@&date=%@",kAPIBaseURI,kAPIEndpointStreetLevelCrime,poly, year]];
+    
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodPost completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+}
+
 -(void)streetLevelCrimeSearchByLocation:(CLLocationCoordinate2D)location year:(NSString*)year completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
     
     NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?lat=%f&lng=%f&date=%@",kAPIBaseURI,kAPIEndpointStreetLevelCrime,location.latitude,location.longitude,year]];
