@@ -143,7 +143,6 @@ static NSString *kHTTPMethodDelete = @"DEL";
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
-
 /*
  Crime Search by Poly+PolyArray
  
