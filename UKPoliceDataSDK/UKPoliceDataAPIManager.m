@@ -217,6 +217,17 @@ static NSString *kHTTPMethodDelete = @"DEL";
     [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodGet completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
 }
 
+-(void)stopAndSearchByPolyArray:(NSArray *)poly date:(NSString *)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSString *polyString = [poly polyFromCLLocationArray];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@&date=%@", kAPIBaseURI, kAPIEndpointStopAndSearchStreet, polyString, date]];
+    [self APIRequestWithURL:URL HTTPMethod:kHTTPMethodPost completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+}
+
+-(void)stopAndSearchByPoly:(NSString *)poly date:(NSString *)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?poly=%@&date=%@", kAPIBaseURI, kAPIEndpointStopAndSearchStreet, poly, date]];
+    [self APIRequestWithURL:url HTTPMethod:kHTTPMethodPost completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler];
+}
+
 -(void)stopAndSearchByLocation:(CLLocationCoordinate2D)location date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler{
     
     NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@?lat=%f&lng=%f&date=%@",kAPIBaseURI,kAPIEndpointStopAndSearchStreet,location.latitude,location.longitude,date]];
