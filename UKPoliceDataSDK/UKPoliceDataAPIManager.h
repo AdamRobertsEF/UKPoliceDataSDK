@@ -82,6 +82,10 @@ typedef void (^APIRequestFailureBlock)(AFHTTPRequestOperation *operation, id JSO
 
 #pragma mark stop and search related
 
+-(void)stopAndSearchByPoly:(NSString*)poly date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
+
+-(void)stopAndSearchByPolyArray:(NSArray*)poly date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
+
 -(void)stopAndSearchByLocation:(CLLocationCoordinate2D)location date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
 
 -(void)stopAndSearchByLocationID:(NSString*)locationID date:(NSString*)date completion:(APIRequestCompletionBlock)requestCompletedHandler failure:(APIRequestFailureBlock)requestFailureHandler;
