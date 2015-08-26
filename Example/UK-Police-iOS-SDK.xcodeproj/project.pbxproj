@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063005EBFE58D6D6D4BC2706 /* Pods_UK_Police_iOS_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3105BD1CBB9055B2AC64B3 /* Pods_UK_Police_iOS_SDK_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		1D6EE406B8C1FB92D38154DA /* Pods_UK_Police_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91761A33872EE0CA28BEE6 /* Pods_UK_Police_iOS_SDK_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,8 +23,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B2624848932FC785CBD1B1DD /* Pods_UK_Police_iOS_SDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3928D77C6CDF01D69A99C259 /* Pods_UK_Police_iOS_SDK_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D5E6399B28AD989CDD5C57ED /* Pods_UK_Police_iOS_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4974574802F519F9E3BEC4 /* Pods_UK_Police_iOS_SDK_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04D48592D5BD9EFED742793F /* Pods-UK-Police-iOS-SDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Example/Pods-UK-Police-iOS-SDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0AE562FB3769379688BD8C27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		26BF3DC3E32F2E9E02491BCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		3928D77C6CDF01D69A99C259 /* Pods_UK_Police_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UK_Police_iOS_SDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DB355A796204890D8480BA8 /* Pods-UK-Police-iOS-SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Tests/Pods-UK-Police-iOS-SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* UK-Police-iOS-SDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "UK-Police-iOS-SDK.app"; path = "UK-Police-iOS-SDK_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D91761A33872EE0CA28BEE6 /* Pods_UK_Police_iOS_SDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UK_Police_iOS_SDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3105BD1CBB9055B2AC64B3 /* Pods_UK_Police_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UK_Police_iOS_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BDA4F7C61A5C3AB66A28CAC /* UK-Police-iOS-SDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "UK-Police-iOS-SDK.podspec"; path = "../UK-Police-iOS-SDK.podspec"; sourceTree = "<group>"; };
+		30D2014ABE994B08E3FF297E /* Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Tests/Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6003F58A195388D20070C39A /* UK-Police-iOS-SDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UK-Police-iOS-SDK_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -54,17 +53,18 @@
 		6003F5A5195388D20070C39A /* EFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* EFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = "UK-Police-iOS-SDK_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* UK-Police-iOS-SDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UK-Police-iOS-SDK_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8EB3666A6B95A3111FDFA5EB /* Pods-UK-Police-iOS-SDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Example/Pods-UK-Police-iOS-SDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		904EA68A904900CA868929B8 /* Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Tests/Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D4974574802F519F9E3BEC4 /* Pods_UK_Police_iOS_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UK_Police_iOS_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6FD48B76793E3F097222301 /* UK-Police-iOS-SDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "UK-Police-iOS-SDK.podspec"; path = "../UK-Police-iOS-SDK.podspec"; sourceTree = "<group>"; };
+		A74FA64EF33793E6D03B5397 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C1F0D78A59A80466413DE55B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C7C89F6E0736D7F6B28715A8 /* Pods-UK-Police-iOS-SDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Tests/Pods-UK-Police-iOS-SDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CC387BCEC8A2C39151FBD78C /* Pods-UK-Police-iOS-SDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Example/Pods-UK-Police-iOS-SDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D8E17CB43C9886D863629E1B /* Pods-UK-Police-iOS-SDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UK-Police-iOS-SDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Example/Pods-UK-Police-iOS-SDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				B2624848932FC785CBD1B1DD /* Pods_UK_Police_iOS_SDK_Example.framework in Frameworks */,
+				1D6EE406B8C1FB92D38154DA /* Pods_UK_Police_iOS_SDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				D5E6399B28AD989CDD5C57ED /* Pods_UK_Police_iOS_SDK_Tests.framework in Frameworks */,
+				063005EBFE58D6D6D4BC2706 /* Pods_UK_Police_iOS_SDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,15 +101,15 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				68B5AAD3AB7947B4FC6CDAAF /* Pods */,
+				65358B6FDA09441459860BDF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* UK-Police-iOS-SDK.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* UK-Police-iOS-SDK_Example.app */,
+				6003F5AE195388D20070C39A /* UK-Police-iOS-SDK_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,8 +121,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				3928D77C6CDF01D69A99C259 /* Pods_UK_Police_iOS_SDK_Example.framework */,
-				9D4974574802F519F9E3BEC4 /* Pods_UK_Police_iOS_SDK_Tests.framework */,
+				0D91761A33872EE0CA28BEE6 /* Pods_UK_Police_iOS_SDK_Example.framework */,
+				1D3105BD1CBB9055B2AC64B3 /* Pods_UK_Police_iOS_SDK_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,20 +175,20 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				B6FD48B76793E3F097222301 /* UK-Police-iOS-SDK.podspec */,
-				26BF3DC3E32F2E9E02491BCE /* README.md */,
-				0AE562FB3769379688BD8C27 /* LICENSE */,
+				2BDA4F7C61A5C3AB66A28CAC /* UK-Police-iOS-SDK.podspec */,
+				A74FA64EF33793E6D03B5397 /* README.md */,
+				C1F0D78A59A80466413DE55B /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		68B5AAD3AB7947B4FC6CDAAF /* Pods */ = {
+		65358B6FDA09441459860BDF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8EB3666A6B95A3111FDFA5EB /* Pods-UK-Police-iOS-SDK_Example.debug.xcconfig */,
-				04D48592D5BD9EFED742793F /* Pods-UK-Police-iOS-SDK_Example.release.xcconfig */,
-				904EA68A904900CA868929B8 /* Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig */,
-				3DB355A796204890D8480BA8 /* Pods-UK-Police-iOS-SDK_Tests.release.xcconfig */,
+				CC387BCEC8A2C39151FBD78C /* Pods-UK-Police-iOS-SDK_Example.debug.xcconfig */,
+				D8E17CB43C9886D863629E1B /* Pods-UK-Police-iOS-SDK_Example.release.xcconfig */,
+				30D2014ABE994B08E3FF297E /* Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig */,
+				C7C89F6E0736D7F6B28715A8 /* Pods-UK-Police-iOS-SDK_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -200,12 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "UK-Police-iOS-SDK_Example" */;
 			buildPhases = (
-				00792E75140FC960FF90C65B /* Check Pods Manifest.lock */,
+				14E638CF967F7681FCE5590F /* Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				8514EADA2E20EAE26A8BACF9 /* Embed Pods Frameworks */,
-				3CCC418A2A078D1F14BB2DE1 /* Copy Pods Resources */,
+				070DA2544AC3D2AFE0BCC242 /* Embed Pods Frameworks */,
+				3CC87C8CFA408BC6607E89C1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,19 +213,19 @@
 			);
 			name = "UK-Police-iOS-SDK_Example";
 			productName = "UK-Police-iOS-SDK";
-			productReference = 6003F58A195388D20070C39A /* UK-Police-iOS-SDK.app */;
+			productReference = 6003F58A195388D20070C39A /* UK-Police-iOS-SDK_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* UK-Police-iOS-SDK_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "UK-Police-iOS-SDK_Tests" */;
 			buildPhases = (
-				1E9344263D45CD588028F325 /* Check Pods Manifest.lock */,
+				C175032336687BFA71390280 /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				0415B98B6224FF16EB3B82FB /* Embed Pods Frameworks */,
-				F6DE6F6447A3798D750459D6 /* Copy Pods Resources */,
+				04B7E126400EFA7A1F361CE5 /* Embed Pods Frameworks */,
+				3FD870C06A4E50C67BA2FB4E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,7 +234,7 @@
 			);
 			name = "UK-Police-iOS-SDK_Tests";
 			productName = "UK-Police-iOS-SDKTests";
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* UK-Police-iOS-SDK_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -293,22 +293,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00792E75140FC960FF90C65B /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		0415B98B6224FF16EB3B82FB /* Embed Pods Frameworks */ = {
+		04B7E126400EFA7A1F361CE5 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,37 +308,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Tests/Pods-UK-Police-iOS-SDK_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1E9344263D45CD588028F325 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3CCC418A2A078D1F14BB2DE1 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Example/Pods-UK-Police-iOS-SDK_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8514EADA2E20EAE26A8BACF9 /* Embed Pods Frameworks */ = {
+		070DA2544AC3D2AFE0BCC242 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,7 +323,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Example/Pods-UK-Police-iOS-SDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6DE6F6447A3798D750459D6 /* Copy Pods Resources */ = {
+		14E638CF967F7681FCE5590F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3CC87C8CFA408BC6607E89C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Example/Pods-UK-Police-iOS-SDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FD870C06A4E50C67BA2FB4E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -381,6 +366,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UK-Police-iOS-SDK_Tests/Pods-UK-Police-iOS-SDK_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C175032336687BFA71390280 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -508,7 +508,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8EB3666A6B95A3111FDFA5EB /* Pods-UK-Police-iOS-SDK_Example.debug.xcconfig */;
+			baseConfigurationReference = CC387BCEC8A2C39151FBD78C /* Pods-UK-Police-iOS-SDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -523,7 +523,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04D48592D5BD9EFED742793F /* Pods-UK-Police-iOS-SDK_Example.release.xcconfig */;
+			baseConfigurationReference = D8E17CB43C9886D863629E1B /* Pods-UK-Police-iOS-SDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -538,7 +538,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 904EA68A904900CA868929B8 /* Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = 30D2014ABE994B08E3FF297E /* Pods-UK-Police-iOS-SDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -561,7 +561,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DB355A796204890D8480BA8 /* Pods-UK-Police-iOS-SDK_Tests.release.xcconfig */;
+			baseConfigurationReference = C7C89F6E0736D7F6B28715A8 /* Pods-UK-Police-iOS-SDK_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -1,0 +1,1 @@
+ const unsigned char UK_Police_iOS_SDKVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:UK_Police_iOS_SDK  PROJECT:Pods-0.1.0" "\n"; const double UK_Police_iOS_SDKVersionNumber __attribute__ ((used)) = (double)0.1;

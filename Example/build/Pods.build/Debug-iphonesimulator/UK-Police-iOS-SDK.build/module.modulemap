@@ -1,0 +1,6 @@
+framework module UK_Police_iOS_SDK {
+  umbrella header "UK-Police-iOS-SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

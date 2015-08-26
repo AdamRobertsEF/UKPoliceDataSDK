@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/adam/iOS development/OpenSourced/UK-Police-iOS-SDK/Example/build/Debug-iphoneos/UK_Police_iOS_SDK.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "UK-Police-iOS-SDK-umbrella.h",
+          'external-contents': "/Users/adam/iOS development/OpenSourced/UK-Police-iOS-SDK/Example/Pods/Target Support Files/UK-Police-iOS-SDK/UK-Police-iOS-SDK-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "UK_Police_iOS_SDK-Swift.h",
+          'external-contents': "/Users/adam/iOS development/OpenSourced/UK-Police-iOS-SDK/Example/build/Debug-iphoneos/UK_Police_iOS_SDK.framework/Headers/UK_Police_iOS_SDK-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/adam/iOS development/OpenSourced/UK-Police-iOS-SDK/Example/build/Debug-iphoneos/UK_Police_iOS_SDK.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/adam/iOS development/OpenSourced/UK-Police-iOS-SDK/Example/build/Pods.build/Debug-iphoneos/UK-Police-iOS-SDK.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
