@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		467724F8D1720226C609DC89 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A147FAA8FD0016C5C02B048 /* libPods.a */; };
+		F34E4E1F1B8D32DF005ABE5A /* CLLocation+String.m in Sources */ = {isa = PBXBuildFile; fileRef = F34E4E181B8D32DF005ABE5A /* CLLocation+String.m */; };
+		F34E4E201B8D32DF005ABE5A /* NSArray+CLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = F34E4E1A1B8D32DF005ABE5A /* NSArray+CLLocation.m */; };
+		F34E4E211B8D32DF005ABE5A /* NSArray+Poly.m in Sources */ = {isa = PBXBuildFile; fileRef = F34E4E1C1B8D32DF005ABE5A /* NSArray+Poly.m */; };
+		F34E4E221B8D32DF005ABE5A /* UKPoliceDataAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F34E4E1E1B8D32DF005ABE5A /* UKPoliceDataAPIManager.m */; };
 		F3E872391B7C1D3600D84368 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E872381B7C1D3600D84368 /* main.m */; };
 		F3E8723C1B7C1D3600D84368 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8723B1B7C1D3600D84368 /* AppDelegate.m */; };
 		F3E8723F1B7C1D3600D84368 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E8723E1B7C1D3600D84368 /* ViewController.m */; };
@@ -14,7 +19,6 @@
 		F3E872441B7C1D3600D84368 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E872431B7C1D3600D84368 /* Images.xcassets */; };
 		F3E872471B7C1D3600D84368 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3E872451B7C1D3600D84368 /* LaunchScreen.xib */; };
 		F3E872531B7C1D3600D84368 /* UKPoliceDataSDK_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E872521B7C1D3600D84368 /* UKPoliceDataSDK_SampleTests.m */; };
-		F3E872611B7C203200D84368 /* UKPoliceDataSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E872601B7C203200D84368 /* UKPoliceDataSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A147FAA8FD0016C5C02B048 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A50CF8515E8BEF0706FBC86D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B28B3B89BC927E01C8F4301F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F34E4E171B8D32DF005ABE5A /* CLLocation+String.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+String.h"; sourceTree = "<group>"; };
+		F34E4E181B8D32DF005ABE5A /* CLLocation+String.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+String.m"; sourceTree = "<group>"; };
+		F34E4E191B8D32DF005ABE5A /* NSArray+CLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CLLocation.h"; sourceTree = "<group>"; };
+		F34E4E1A1B8D32DF005ABE5A /* NSArray+CLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CLLocation.m"; sourceTree = "<group>"; };
+		F34E4E1B1B8D32DF005ABE5A /* NSArray+Poly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Poly.h"; sourceTree = "<group>"; };
+		F34E4E1C1B8D32DF005ABE5A /* NSArray+Poly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Poly.m"; sourceTree = "<group>"; };
+		F34E4E1D1B8D32DF005ABE5A /* UKPoliceDataAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKPoliceDataAPIManager.h; sourceTree = "<group>"; };
+		F34E4E1E1B8D32DF005ABE5A /* UKPoliceDataAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKPoliceDataAPIManager.m; sourceTree = "<group>"; };
 		F3E872331B7C1D3600D84368 /* UKPoliceDataSDK-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UKPoliceDataSDK-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E872371B7C1D3600D84368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3E872381B7C1D3600D84368 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,7 +56,6 @@
 		F3E8724C1B7C1D3600D84368 /* UKPoliceDataSDK-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UKPoliceDataSDK-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E872511B7C1D3600D84368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3E872521B7C1D3600D84368 /* UKPoliceDataSDK_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UKPoliceDataSDK_SampleTests.m; sourceTree = "<group>"; };
-		F3E872601B7C203200D84368 /* UKPoliceDataSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UKPoliceDataSDK.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/UKPoliceDataSDK-cpbxriwvqhcuzlamozmeymqrgtwb/Build/Products/Debug-iphoneos/UKPoliceDataSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E872611B7C203200D84368 /* UKPoliceDataSDK.framework in Frameworks */,
+				467724F8D1720226C609DC89 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +77,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DD31851435F688437FE8D54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A147FAA8FD0016C5C02B048 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42C9894302B8D390DCF75057 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A50CF8515E8BEF0706FBC86D /* Pods.debug.xcconfig */,
+				B28B3B89BC927E01C8F4301F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F34E4E151B8D32DF005ABE5A /* UKPoliceDataSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F34E4E161B8D32DF005ABE5A /* Categories */,
+				F34E4E1D1B8D32DF005ABE5A /* UKPoliceDataAPIManager.h */,
+				F34E4E1E1B8D32DF005ABE5A /* UKPoliceDataAPIManager.m */,
+			);
+			name = UKPoliceDataSDK;
+			path = ../../UKPoliceDataSDK;
+			sourceTree = "<group>";
+		};
+		F34E4E161B8D32DF005ABE5A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F34E4E171B8D32DF005ABE5A /* CLLocation+String.h */,
+				F34E4E181B8D32DF005ABE5A /* CLLocation+String.m */,
+				F34E4E191B8D32DF005ABE5A /* NSArray+CLLocation.h */,
+				F34E4E1A1B8D32DF005ABE5A /* NSArray+CLLocation.m */,
+				F34E4E1B1B8D32DF005ABE5A /* NSArray+Poly.h */,
+				F34E4E1C1B8D32DF005ABE5A /* NSArray+Poly.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		F3E8722A1B7C1D3600D84368 = {
 			isa = PBXGroup;
 			children = (
 				F3E872351B7C1D3600D84368 /* UKPoliceDataSDK-Sample */,
 				F3E8724F1B7C1D3600D84368 /* UKPoliceDataSDK-SampleTests */,
 				F3E872341B7C1D3600D84368 /* Products */,
+				42C9894302B8D390DCF75057 /* Pods */,
+				0DD31851435F688437FE8D54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +141,7 @@
 		F3E872351B7C1D3600D84368 /* UKPoliceDataSDK-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				F34E4E151B8D32DF005ABE5A /* UKPoliceDataSDK */,
 				F3E8723A1B7C1D3600D84368 /* AppDelegate.h */,
 				F3E8723B1B7C1D3600D84368 /* AppDelegate.m */,
 				F3E8723D1B7C1D3600D84368 /* ViewController.h */,
@@ -91,7 +149,6 @@
 				F3E872401B7C1D3600D84368 /* Main.storyboard */,
 				F3E872431B7C1D3600D84368 /* Images.xcassets */,
 				F3E872451B7C1D3600D84368 /* LaunchScreen.xib */,
-				F3E872621B7C203D00D84368 /* Frameworks */,
 				F3E872361B7C1D3600D84368 /* Supporting Files */,
 			);
 			path = "UKPoliceDataSDK-Sample";
@@ -123,14 +180,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F3E872621B7C203D00D84368 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F3E872601B7C203200D84368 /* UKPoliceDataSDK.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3E872561B7C1D3600D84368 /* Build configuration list for PBXNativeTarget "UKPoliceDataSDK-Sample" */;
 			buildPhases = (
+				D51D63E8D13522069AB4C1A4 /* Check Pods Manifest.lock */,
 				F3E8722F1B7C1D3600D84368 /* Sources */,
 				F3E872301B7C1D3600D84368 /* Frameworks */,
 				F3E872311B7C1D3600D84368 /* Resources */,
+				09B4B7ED8DB6CDE30F0E091D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,13 +277,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09B4B7ED8DB6CDE30F0E091D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D51D63E8D13522069AB4C1A4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F3E8722F1B7C1D3600D84368 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34E4E1F1B8D32DF005ABE5A /* CLLocation+String.m in Sources */,
 				F3E8723F1B7C1D3600D84368 /* ViewController.m in Sources */,
 				F3E8723C1B7C1D3600D84368 /* AppDelegate.m in Sources */,
+				F34E4E201B8D32DF005ABE5A /* NSArray+CLLocation.m in Sources */,
+				F34E4E211B8D32DF005ABE5A /* NSArray+Poly.m in Sources */,
+				F34E4E221B8D32DF005ABE5A /* UKPoliceDataAPIManager.m in Sources */,
 				F3E872391B7C1D3600D84368 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +445,7 @@
 		};
 		F3E872571B7C1D3600D84368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A50CF8515E8BEF0706FBC86D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -371,6 +460,7 @@
 		};
 		F3E872581B7C1D3600D84368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28B3B89BC927E01C8F4301F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (

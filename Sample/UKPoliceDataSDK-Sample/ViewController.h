@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UKPoliceDataAPIManager.h"
 
 @interface ViewController : UIViewController
-
-
+@property (weak, nonatomic) IBOutlet UILabel *consoleOutput;
 @end
 
