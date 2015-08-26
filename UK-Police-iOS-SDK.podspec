@@ -28,9 +28,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'UK-Police-iOS-SDK/UKPoliceDataAPIManager.h'
+  s.source_files = 'UK-Police-iOS-SDK/**/*.{h,m}'
 
-  s.public_header_files = 'UK-Police-iOS-SDK/UKPoliceDataAPIManager.h'
+  # s.public_header_files = 'UK-Police-iOS-SDK/UKPoliceDataAPIManager.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.3'
 end
