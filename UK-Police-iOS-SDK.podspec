@@ -23,14 +23,14 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Adam Roberts" => "adam@enigmaticflare.co.uk" }
   s.source           = { :git => "https://github.com/EnigmaticFlare/UK-Police-iOS-SDK.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<EnigmaticFlare>'
+  # s.social_media_url = 'https://twitter.com/EnigmaticFlare'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'UK-Police-iOS-SDK/**/*'
+  s.source_files = 'UK-Police-iOS-SDK/UKPoliceDataAPIManager.h'
 
-  s.public_header_files = 'UK-Police-iOS-SDK/**/*.h'
+  s.public_header_files = 'UK-Police-iOS-SDK/UKPoliceDataAPIManager.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AFNetworking', '~> 2.3'
 end
