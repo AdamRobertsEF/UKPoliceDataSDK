@@ -1,6 +1,5 @@
 # UK-Police-iOS-SDK
 
-[![CI Status](http://img.shields.io/travis/Adam Roberts/UK-Police-iOS-SDK.svg?style=flat)](https://travis-ci.org/Adam Roberts/UK-Police-iOS-SDK)
 [![Version](https://img.shields.io/cocoapods/v/UK-Police-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/UK-Police-iOS-SDK)
 [![License](https://img.shields.io/cocoapods/l/UK-Police-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/UK-Police-iOS-SDK)
 [![Platform](https://img.shields.io/cocoapods/p/UK-Police-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/UK-Police-iOS-SDK)
