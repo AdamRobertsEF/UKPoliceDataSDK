@@ -20,9 +20,10 @@ it, simply add the following line to your Podfile:
 pod "UK-Police-iOS-SDK"
 ```
 
-## Author
+## Authors
 
 Adam Roberts, adam@enigmaticflare.co.uk
+Joshua Santos, nerdsville@nerdsville.net
 
 ## License
 
