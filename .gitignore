@@ -2,3 +2,5 @@ Pods
 *.lock
 
 Sample/UKPoliceDataSDK-Sample.xcodeproj/project.xcworkspace/xcuserdata/adam@filterzilla.camera.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcworkspacedata
