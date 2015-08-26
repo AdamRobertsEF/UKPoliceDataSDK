@@ -1,13 +1,29 @@
-#iOS SDK for data.police.uk
+# UK-Police-iOS-SDK
 
-Beta Version — Aiming to push this live into production within 2 weeks.
+[![CI Status](http://img.shields.io/travis/Adam Roberts/UK-Police-iOS-SDK.svg?style=flat)](https://travis-ci.org/Adam Roberts/UK-Police-iOS-SDK)
+[![Version](https://img.shields.io/cocoapods/v/UK-Police-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/UK-Police-iOS-SDK)
+[![License](https://img.shields.io/cocoapods/l/UK-Police-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/UK-Police-iOS-SDK)
+[![Platform](https://img.shields.io/cocoapods/p/UK-Police-iOS-SDK.svg?style=flat)](http://cocoapods.org/pods/UK-Police-iOS-SDK)
 
-Not ready for use in a production app.
+## Usage
 
-The MIT License (MIT) Copyright © 2015 Enigmatic Flare
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+## Requirements
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+## Installation
 
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+UK-Police-iOS-SDK is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "UK-Police-iOS-SDK"
+```
+
+## Author
+
+Adam Roberts, adam@enigmaticflare.co.uk
+
+## License
+
+UK-Police-iOS-SDK is available under the MIT license. See the LICENSE file for more info.
