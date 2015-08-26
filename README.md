@@ -10,6 +10,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+iOS 7
+
 ## Installation
 
 UK-Police-iOS-SDK is available through [CocoaPods](http://cocoapods.org). To install
